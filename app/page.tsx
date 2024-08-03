@@ -55,7 +55,7 @@ const Home = () => {
       method:'get'
     })
     const result = await res.json()
-    if(result.success){
+    if(result.success ){
       console.log(result.file)
       const files = result.file.map((file:string)=>(
         {
